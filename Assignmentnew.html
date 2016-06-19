@@ -1,0 +1,147 @@
+<!DOCTYPE html{>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Assignmentnew</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="Assignmentnew.css">
+    <script src="Assignmentnew.js"></script>
+
+</head>
+<body>
+<!--Intro to Quiz-->
+<div class="container-fluid stripe promo">
+    <div class="words">
+        <div class="item">which israeli food</br>are you</div></br>
+        <div class="item"></div>
+        <a class="buttonwrap">
+            <div class="item button"> take the quiz and find out now </div>
+        </a>
+    </div>
+</div>
+<div class="container-fluid stripe quiz">
+    <div class="questions">
+<div class="col-lg-3"></div>
+<div class="col-lg-6">
+    </br>
+    </br>
+    </br>
+    </br>
+    <!--Question 1-->
+        <span class="questionstitle">choose your favorite meal of the day</span></br></br>
+        <label><input class="questionstext" type="radio" name="q1" value="1"/>Breakfast! If Brunch even better :)</label></br>
+        <label><input class="questionstext" type="radio" name="q1" value="2"/>Lunch! Is always the perfect time to eat good food.</label></br>
+        <label><input class="questionstext" type="radio" name="q1" value="3"/>I would wait the whole day to have a great meal for dinner.</label></br>
+        <label><input class="questionstext" type="radio" name="q1" value="4"/>Snacks are always the best and way more fun!</label></br></br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!--Question 2-->
+        <span class="questionstitle">which dips below you ordered to come along with your french fries</span></br></br>
+        <label><input type="checkbox" name="q2" value="1"/>ketchup</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>mayonnaise</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>spicy mayo</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>more salt and pepper!</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>tahina!!!</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>mustard</label></br>
+        <label><input type="checkbox" name="q2" value="1"/>everything goes well with hummmus</label></br>
+        <label><input type="checkbox" name="q2" value="-1"/>I would never order french fries!</label></br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!--Question3-->
+         <span class="questionstitle"> The clock ticked and it's exactly noon</br>set how hungry are you</span></br>
+    </br>
+    </br>
+        <input type="range" id="q3" min="0" max="4">
+    </br>
+    </br>
+    </br>
+    </br>
+        <!--Question4-->
+       <span class="questionstitle">After a long day at work the best thing to do is</span></br>
+    </br>
+    </br>
+        <label><input type="radio" name="q4" value="1"/>Have a great relaxing dinner with your partner/family!</label></br>
+        <label><input type="radio" name="q4" value="3"/>Meet friends!</label></br>
+        <label><input type="radio" name="q4" value="4"/>Sleep! Of course.</label></br>
+        <label><input type="radio" name="q4" value="2"/>Go for a run to sweat all the stress out.</label></br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <!--Question 5-->
+    <span class="questionstitle">How many glasses of water or drinks do you usually have with your food</span>
+    </br>
+    </br>
+    <input type="number" id="q5" min="0" max="4">
+    </br>
+    </br>
+    </br>
+    </br>
+    <span class="questionstitle">please enter your name</span>
+    </br>
+    </br>
+    <input id="first-name" placeholder="Name">
+    </br>
+    </br>
+        <button onclick="checkScore(),printName()"> Submit!</button>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+</div>
+
+<!-- Pop up results for quiz -->
+<!-- Result 1 -->
+<div id="myModalBureka" class="modalbureka">
+    <!-- Modal content -->
+    <div class="modalbureka-content-content">
+        <span class="close">×</span>
+        <p id="showText1"></p>
+        <p>you are a </br> bureka</p>
+    </div>
+</div>
+
+<!-- Result 2 -->
+<div id="myModalFalafel" class="modalfalafel">
+    <!-- Modal content -->
+    <div class="modalfalafel-content-content">
+        <span class="close">×</span>
+        <p id="showText2"></p>
+        <p>you are a </br> falafel</p>
+    </div>
+</div>
+
+<!-- Result 3 -->
+<div id="myModalShakshooka" class="modalshakshooka">
+    <!-- Modal content -->
+    <div class="modalshakshooka-content-content">
+        <span class="close">×</span>
+        <p id="showText3"></p>
+        <p>you are a </br> shakshooka</p>
+    </div>
+</div>
+
+<!-- Result 4 -->
+<div id="myModalBreakfast" class="modalbreakfast">
+    <!-- Modal content -->
+    <div class="modalbreakfast-content-content">
+        <span class="close">×</span>
+        <p id="showText4"></p>
+        <p>you are an </br> israeli breakfast</p>
+    </div>
+</div>
+<!-- Latest compiled and minified JavaScript & jquery-->
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

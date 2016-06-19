@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Baskerville Bold";
+    src: url("Fonts/LibreBaskerville-Bold.otf") format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url("Fonts/LibreBaskerville-Regular.otf") format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Asphalts";
+    src: url("Fonts/Asphalts.ttf") format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ChasingEmbers";
+    src: url("Fonts/ChasingEmbers.ttf") format('opentype');
+    font-style: normal;
+}
+
+/* bootstrap corrections */
+a:hover {
+    text-decoration: none;
+}
+.stripe{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.stripe.promo{
+    height: 1100px;
+    background-image: url(Pics/israeli_food_header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+.stripe.promo .words{
+    margin: 13% 0% 0 0;
+    padding-left:0;
+    width: 100%;
+}
+.stripe.promo .words .item{
+
+}
+
+.stripe.promo .words .item:first-child{
+    font-family: ChasingEmbers;
+    font-size: 300px;
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0,0,0,1);
+    line-height: 70%;
+}
+
+}
+.stripe.promo .words .buttonwrap:hover{
+    text-decoration: none;
+}
+.stripe.promo .words .buttonwrap .item.button{
+    font-family:"ChasingEmbers";
+    font-size: 100px;
+    color: #2EC4B6;
+    padding: 1% 0 1% 0;
+    margin: 3% 0% 0 0%;
+    background-color: black;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+.stripe.promo .words .item.button:hover{
+    color:black;
+    background-color: #2EC4B6;
+    text-shadow: none;
+}
+
+.stripe{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.stripe.quiz{
+    height: 1500px;
+    background-color:#2EC4B6;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: left;
+}
+.stripe.quiz .questionstitle{
+    font-family: "ChasingEmbers";
+    font-size:50px;
+    color: white;
+    line-height: 70%;
+    margin-top: 50px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+.footer {
+    height: 250px;
+    background-image: url(Pics/israeli_food_header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.modalbureka {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url(Pics/bureka.jpg);
+    font-family: ChasingEmbers;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+    line-height: 90%;
+}
+
+.modalfalafel {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url(Pics/falafel.jpg);
+    font-family: ChasingEmbers;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+    line-height: 90%;
+}
+
+.modalshakshooka {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url(Pics/shakshooka.png);
+    font-family: ChasingEmbers;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+    line-height: 90%;
+}
+
+.modalbreakfast{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-image: url(Pics/breakfast.jpg);
+    font-family: ChasingEmbers;
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    background-size: cover;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+    line-height: 90%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
