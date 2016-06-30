@@ -1,18 +1,12 @@
 @font-face {
-    font-family: "Baskerville Bold";
-    src: url("Fonts/LibreBaskerville-Bold.otf") format('opentype');
+    font-family: "Roboto Regular";
+    src: url("Fonts/RobotoRegular.ttf") format('opentype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: Baskerville;
-    src: url("Fonts/LibreBaskerville-Regular.otf") format('opentype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Asphalts";
-    src: url("Fonts/Asphalts.ttf") format('opentype');
+    font-family: "Roboto Thin";
+    src: url("Fonts/RobotoThin.ttf") format('opentype');
     font-style: normal;
 }
 
@@ -32,40 +26,38 @@ a:hover {
 }
 
 .stripe.promo{
-    height: 1100px;
-    background-image: url(Pics/israeli_food_header.jpg);
+    height: 600px;
+    background-image: url("Pics/israeli_food_header.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
     text-align: center;
 }
 .stripe.promo .words{
-    margin: 13% 0% 0 0;
+    margin: 13% 0 0 0;
     padding-left:0;
     width: 100%;
 }
-.stripe.promo .words .item{
-
-}
 
 .stripe.promo .words .item:first-child{
-    font-family: ChasingEmbers;
-    font-size: 300px;
+    margin-top: -50px;
+    font-family: "ChasingEmbers", "Times New Roman";
+    font-size: 200px;
     color: white;
     text-shadow: 10px 10px 10px rgba(0,0,0,1);
     line-height: 70%;
 }
 
-}
+
 .stripe.promo .words .buttonwrap:hover{
     text-decoration: none;
 }
 .stripe.promo .words .buttonwrap .item.button{
-    font-family:"ChasingEmbers";
-    font-size: 100px;
+    font-family:"Roboto Regular","Times New Roman";
+    font-size: 40px;
     color: #2EC4B6;
     padding: 1% 0 1% 0;
-    margin: 3% 0% 0 0%;
+    margin: 3% 0 0 0;
     background-color: black;
     text-decoration: none;
     text-shadow: 5px 5px 5px rgba(0,0,0,1);
@@ -83,24 +75,35 @@ a:hover {
 
 .stripe.quiz{
     height: 1500px;
-    background-color:#2EC4B6;
+    background-color:white;
     background-size: cover;
     background-position: center;
     position: relative;
     text-align: left;
 }
-.stripe.quiz .questionstitle{
-    font-family: "ChasingEmbers";
-    font-size:50px;
-    color: white;
+
+.stripe.quiz .question{
+    margin-top:70px;
+}
+.stripe.quiz .numberstitle{
+    font-family: "ChasingEmbers", "Times New Roman";
+    font-size:30px;
+    color: black;
     line-height: 70%;
     margin-top: 50px;
-    text-shadow: 5px 5px 5px rgba(0,0,0,1);
 }
+.stripe.quiz .questionstitle{
+    font-family: "Roboto Regular", "Times New Roman";
+    font-size:30px;
+    color: #2EC4B6;
+    line-height: 70%;
+    margin-top: 50px;
+}
+
 
 .footer {
     height: 250px;
-    background-image: url(Pics/israeli_food_header.jpg);
+    background-image: url("Pics/israeli_food_header.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -113,19 +116,20 @@ a:hover {
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
+    background-image: url("Pics/bureka.jpg");
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-image: url(Pics/bureka.jpg);
-    font-family: ChasingEmbers;
+    font-family: "ChasingEmbers", "Times New Roman";
     color: white;
-    font-size: 300px;
+    font-size: 200px;
     text-align: center;
     background-size: cover;
     text-shadow: 5px 5px 5px rgba(0,0,0,1);
     line-height: 90%;
 }
+
 
 .modalfalafel {
     display: none; /* Hidden by default */
@@ -137,10 +141,10 @@ a:hover {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-image: url(Pics/falafel.jpg);
-    font-family: ChasingEmbers;
+    background-image: url("Pics/falafel.jpg");
+    font-family: "ChasingEmbers", "Times New Roman";
     color: white;
-    font-size: 300px;
+    font-size: 180px;
     text-align: center;
     background-size: cover;
     text-shadow: 5px 5px 5px rgba(0,0,0,1);
@@ -157,10 +161,10 @@ a:hover {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-image: url(Pics/shakshooka.png);
-    font-family: ChasingEmbers;
+    background-image: url("Pics/shakshooka.png");
+    font-family: "ChasingEmbers", "Times New Roman";
     color: white;
-    font-size: 300px;
+    font-size: 180px;
     text-align: center;
     background-size: cover;
     text-shadow: 5px 5px 5px rgba(0,0,0,1);
@@ -177,10 +181,10 @@ a:hover {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-image: url(Pics/breakfast.jpg);
-    font-family: ChasingEmbers;
+    background-image: url("Pics/breakfast.jpg");
+    font-family: "ChasingEmbers", "Times New Roman";
     color: white;
-    font-size: 300px;
+    font-size: 180px;
     text-align: center;
     background-size: cover;
     text-shadow: 5px 5px 5px rgba(0,0,0,1);
@@ -189,15 +193,15 @@ a:hover {
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    z-index: 100;
+    float: left;
+    font-size: 5px;
+    text-align: center;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
