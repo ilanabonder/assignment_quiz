@@ -36,9 +36,9 @@ var checkScore  = function() {
         var modalshakshooka = document.getElementById('myModalShakshooka');
         var span2 = document.getElementsByClassName("close")[2];
         modalshakshooka.style.display = "block";
-        span2.onclick = function () {
-            modalshakshooka.style.display = "none";
-        }
+        //span2.onclick = function () {
+         //   onclick="document.getElementById('myModalShakshooka').style.display = 'none';"
+        //}
     }
     /*third score = falafel*/
     else if (score > 11 && score <= 13) {

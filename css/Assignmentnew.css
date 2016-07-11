@@ -192,16 +192,15 @@ a:hover {
 }
 
 /* The Close Button */
-.close {
-    z-index: 100;
+.close-btn {
+    z-index: 12345678;
+    position: fixed;
+    overflow: visible;
     float: left;
-    font-size: 5px;
+    font-size: 70px;
     text-align: center;
+    top: 10px;
+    right: 100px;
 }
 
-.close:hover,
-.close:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
+
